@@ -1,4 +1,4 @@
-youtube-ai-assistant/
+transcrip-ai-assistant/
 │
 ├── app/
 │   ├── __init__.py
