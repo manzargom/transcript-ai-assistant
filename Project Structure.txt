@@ -1,0 +1,56 @@
+youtube-ai-assistant/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py                 # Main Flask application
+│   ├── models.py               # Data models and schemas
+│   ├── routes.py               # All route definitions
+│   │
+│   ├── core/                   # Core business logic
+│   │   ├── __init__.py
+│   │   ├── assistant.py        # Main YouTubeAIAssistant class
+│   │   ├── metadata.py         # Video metadata extraction
+│   │   └── ollama_client.py    # Ollama API client
+│   │
+│   ├── api/                    # REST API endpoints
+│   │   ├── __init__.py
+│   │   ├── endpoints.py        # API endpoints for integration
+│   │   └── schemas.py          # API request/response schemas
+│   │
+│   ├── static/                 # Static files
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   └── js/
+│   │       └── script.js
+│   │
+│   ├── templates/              # HTML templates
+│   │   ├── base.html
+│   │   ├── index.html
+│   │   ├── result.html
+│   │   └── api_docs.html
+│   │
+│   └── utils/                  # Utilities
+│       ├── __init__.py
+│       ├── video_utils.py      # Video ID extraction
+│       └── file_utils.py       # File handling utilities
+│
+├── tests/                      # Unit tests
+│   ├── __init__.py
+│   ├── test_assistant.py
+│   ├── test_metadata.py
+│   └── test_api.py
+│
+├── config/                     # Configuration
+│   ├── __init__.py
+│   ├── default.py
+│   └── development.py
+│
+├── logs/                       # Log files (created at runtime)
+├── outputs/                    # Generated files (created at runtime)
+│
+├── requirements.txt            # Python dependencies
+├── .env.example               # Example environment variables
+├── .gitignore                 # Git ignore file
+├── README.md                  # Project documentation
+├── docker-compose.yml         # Docker setup (optional)
+└── run.py                     # Application entry point
